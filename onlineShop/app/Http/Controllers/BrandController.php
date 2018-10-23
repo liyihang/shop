@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Goods;
+use App\Brand;
 use Illuminate\Http\Request;
 
-class GoodsController extends Controller
+class BrandController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,6 @@ class GoodsController extends Controller
     public function index()
     {
         //
-        return view('goods.goods-list');
     }
 
     /**
@@ -42,10 +41,10 @@ class GoodsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function show(Goods $goods)
+    public function show(Brand $brand)
     {
         //
     }
@@ -53,10 +52,10 @@ class GoodsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function edit(Goods $goods)
+    public function edit(Brand $brand)
     {
         //
     }
@@ -65,10 +64,10 @@ class GoodsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Goods  $goods
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Goods $goods)
+    public function update(Request $request, Brand $brand)
     {
         //
     }
@@ -76,10 +75,10 @@ class GoodsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Brand  $brand
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Goods $goods)
+    public function destroy(Brand $brand)
     {
         //
     }

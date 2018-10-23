@@ -51,29 +51,23 @@
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>产品列表（待开发）</cite>
+                                        <a href="javascript:;" _href="{{url('goods')}}">
+                                            <cite>产品列表</cite>
                                         </a>
                                     </dd>
                                 </dd>
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="./welcome.html">
-                                            <cite>品牌管理（待开发）</cite>
+                                            <cite>品牌管理</cite>
                                         </a>
                                     </dd>
                                 </dd>
+                                
                                 <dd class="">
                                     <dd class="">
                                         <a href="javascript:;" _href="./welcome.html">
-                                            <cite>类型管理（待开发）</cite>
-                                        </a>
-                                    </dd>
-                                </dd>
-                                <dd class="">
-                                    <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>类型属性（待开发）</cite>
+                                            <cite>产品属性</cite>
                                         </a>
                                     </dd>
                                 </dd>

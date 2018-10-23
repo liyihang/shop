@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>
-            X-admin v1.0
+            男人装 v1.0
         </title>
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,8 +17,8 @@
         <div class="x-nav">
             <span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
-              <a><cite>会员管理</cite></a>
-              <a><cite>轮播列表</cite></a>
+              <a><cite>商品管理</cite></a>
+              <a><cite>商品列表</cite></a>
             </span>
             <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"  href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a>
         </div>
@@ -62,7 +62,7 @@
                             <img  src="./images/banner.png" width="200" alt="">点击图片试试
                         </td>
                         <td >
-                            http://www.xuebingsi.com
+                            http://www.zfyg.com
                         </td>
                         <td >
                             十月活动轮播
@@ -157,14 +157,6 @@
                 });
             }
             </script>
-            <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-        </script>
+        
     </body>
 </html>
