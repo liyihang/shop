@@ -27,6 +27,13 @@ class AdminController extends Controller
     }
 
     /**
+     * admin list
+     */
+    public function list()
+    {
+        return view('admin.admin-list');
+    }
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

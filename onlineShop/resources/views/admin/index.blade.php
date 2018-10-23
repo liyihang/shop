@@ -58,7 +58,7 @@
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
+                                        <a href="javascript:;" _href="{{url('brand')}}">
                                             <cite>品牌管理</cite>
                                         </a>
                                     </dd>
@@ -71,13 +71,7 @@
                                         </a>
                                     </dd>
                                 </dd>
-                                <dd class="">
-                                    <dd class="">
-                                        <a href="javascript:;" _href="./category.html">
-                                            <cite>产品分类</cite>
-                                        </a>
-                                    </dd>
-                                </dd>
+                                
                             </dl>
                         </li>
                         <li class="layui-nav-item">
@@ -114,7 +108,7 @@
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
-                                    <a href="javascript:;" _href="./category.html">
+                                    <a href="javascript:;" _href="{{url('category')}}">
                                         <cite>分类列表</cite>
                                     </a>
                                 </dd>
@@ -143,7 +137,7 @@
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
-                                    <a href="javascript:;" _href="member-list.html">
+                                    <a href="javascript:;" _href="{{url('number')}}">
                                         <cite>会员列表</cite>
                                     </a>
                                 </dd>
@@ -180,7 +174,7 @@
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
-                                    <a href="javascript:;" _href="./admin-list.html">
+                                    <a href="javascript:;" _href="{{url('admin/list')}}">
                                         <cite>管理员列表</cite>
                                     </a>
                                 </dd>
@@ -325,7 +319,7 @@
                 </ul>
                 <div class="layui-tab-content site-demo site-demo-body">
                     <div class="layui-tab-item layui-show">
-                        <iframe frameborder="0" src="{{url('admin.welcome')}}" class="x-iframe"></iframe>
+                        <iframe frameborder="0" src="{{url('/admin/welcome')}}" class="x-iframe"></iframe>
                     </div>
                 </div>
             </div>
