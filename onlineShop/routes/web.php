@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('user.index');
 // });
-Route::get('/number', 'NumberController@index')->name('number.index');
+Route::get('/admin', 'adminController@index')->name('admin.index');
+Route::get('/admin.welcome', 'adminController@welcome')->name('admin.welcome');
+
 Route::get('/goods', 'GoodsController@index')->name('goods.index');
 Route::get('/category', 'CategoryController@index')->name('category.index');
