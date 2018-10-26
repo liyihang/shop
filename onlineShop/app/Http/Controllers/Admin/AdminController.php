@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Category;
+use App\Admin\Admin;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,24 @@ class CategoryController extends Controller
     public function index()
     {
         //
-        return view('category.index');
+        return view('admin.admin.index');
+    }
+    /**
+     * include welcome page
+     */
+    public function welcome()
+    {
+        //
+        return view('admin.admin.welcome');
     }
 
+    /**
+     * admin list
+     */
+    public function list()
+    {
+        return view('admin.admin.admin-list');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -42,10 +57,10 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(Admin $admin)
     {
         //
     }
@@ -53,10 +68,10 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit(Admin $admin)
     {
         //
     }
@@ -65,10 +80,10 @@ class CategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, Admin $admin)
     {
         //
     }
@@ -76,10 +91,10 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy(Admin $admin)
     {
         //
     }

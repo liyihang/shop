@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Admin;
+use App\Admin\Goods;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class GoodsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,24 +15,9 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view('admin.index');
-    }
-    /**
-     * include welcome page
-     */
-    public function welcome()
-    {
-        //
-        return view('admin.welcome');
+        return view('admin.goods.goods-list');
     }
 
-    /**
-     * admin list
-     */
-    public function list()
-    {
-        return view('admin.admin-list');
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -57,10 +42,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Admin  $admin
+     * @param  \App\Goods  $goods
      * @return \Illuminate\Http\Response
      */
-    public function show(Admin $admin)
+    public function show(Goods $goods)
     {
         //
     }
@@ -68,10 +53,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Admin  $admin
+     * @param  \App\Goods  $goods
      * @return \Illuminate\Http\Response
      */
-    public function edit(Admin $admin)
+    public function edit(Goods $goods)
     {
         //
     }
@@ -80,10 +65,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Admin  $admin
+     * @param  \App\Goods  $goods
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Admin $admin)
+    public function update(Request $request, Goods $goods)
     {
         //
     }
@@ -91,10 +76,10 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Admin  $admin
+     * @param  \App\Goods  $goods
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Admin $admin)
+    public function destroy(Goods $goods)
     {
         //
     }

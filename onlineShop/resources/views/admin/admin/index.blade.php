@@ -66,7 +66,7 @@
                                 
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
+                                        <a href="javascript:;" _href="{{url('attribute')}}">
                                             <cite>产品属性</cite>
                                         </a>
                                     </dd>

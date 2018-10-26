@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Brand;
+use App\Admin\Brand;
 use Illuminate\Http\Request;
 
 class BrandController extends Controller
@@ -15,7 +15,7 @@ class BrandController extends Controller
     public function index()
     {
         //
-        return view('brand.index');
+        return view('admin.brand.index');
     }
 
     /**

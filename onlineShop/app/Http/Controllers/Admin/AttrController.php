@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Goods;
+use App\Admin\Attr;
 use Illuminate\Http\Request;
 
-class GoodsController extends Controller
+class AttrController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class GoodsController extends Controller
     public function index()
     {
         //
-        return view('goods.goods-list');
+        return view('admin.attr.index');
     }
 
     /**
@@ -42,10 +42,10 @@ class GoodsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Attr  $attr
      * @return \Illuminate\Http\Response
      */
-    public function show(Goods $goods)
+    public function show(Attr $attr)
     {
         //
     }
@@ -53,10 +53,10 @@ class GoodsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Attr  $attr
      * @return \Illuminate\Http\Response
      */
-    public function edit(Goods $goods)
+    public function edit(Attr $attr)
     {
         //
     }
@@ -65,10 +65,10 @@ class GoodsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Goods  $goods
+     * @param  \App\Attr  $attr
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Goods $goods)
+    public function update(Request $request, Attr $attr)
     {
         //
     }
@@ -76,10 +76,10 @@ class GoodsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Goods  $goods
+     * @param  \App\Attr  $attr
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Goods $goods)
+    public function destroy(Attr $attr)
     {
         //
     }
