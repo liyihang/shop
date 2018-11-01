@@ -51,7 +51,7 @@
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="{{url('goods')}}">
+                                        <a href="javascript:;" _href="{{url('/admin/goods')}}">
                                             <cite>产品列表</cite>
                                         </a>
                                     </dd>

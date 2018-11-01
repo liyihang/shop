@@ -15,6 +15,11 @@ class CreateAdminsTable extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('username',32)->unique()->comment('用户名');
+            $table->string('password',255)->comment('密码');
+            $table->char('phone',15)->nullable()->comment('手机号码');
+            $table->string('email',32)->unique()->nullable()->comment('邮箱');
+            $table->boolean('status')->default(TRUE)->comment('用户状态');
             $table->timestamps();
         });
     }

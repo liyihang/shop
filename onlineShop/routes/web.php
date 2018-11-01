@@ -2,6 +2,8 @@
 use Illuminate\Support\Facades\Route;
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,9 +24,13 @@ Route::namespace('Admin')
             Route::get('/admin/welcome', 'AdminController@welcome')->name('admin.welcome');
             Route::get('/admin/list', 'AdminController@list')->name('admin.list');
 
-            Route::get('/goods', 'GoodsController@index')->name('goods.index');
+            Route::get('/admin/goods', 'GoodsController@index')->name('goods.index');
             Route::get('/category', 'CategoryController@index')->name('category.index');
             Route::get('/brand','BrandController@index')->name('brand.index');
             Route::get('/attribute','AttrController@index')->name('attr.index');
             Route::get('/number','NumberController@index')->name('number.index');
         });
+
+
+
+Route::get('/mail','MailController@test');

@@ -15,6 +15,9 @@ class CreateGoodsTable extends Migration
     {
         Schema::create('goods', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('thumb',255)->comment('goods_thumb');
+            $table->string('goods_name',255)->comment('商品名称');
+            $table->
             $table->timestamps();
         });
     }
