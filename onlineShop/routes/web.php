@@ -31,6 +31,9 @@ Route::namespace('Admin')
             Route::get('/number','NumberController@index')->name('number.index');
         });
 
-
+// 后台首页路由
+Route::get('/', function () {
+    return "<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541160398028&di=276b2ce07c813237f8f856cd12c0fdb9&imgtype=0&src=http%3A%2F%2Ff.cdn.xsteach.cn%2Fuploaded%2Fd8%2Ff8%2F16%2Fd8f816bfef5249511468870723516e12003.gif'>";
+});
 
 Route::get('/mail','MailController@test');

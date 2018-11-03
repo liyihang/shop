@@ -19,6 +19,7 @@ class CreateAdminsTable extends Migration
             $table->string('password',255)->comment('密码');
             $table->char('phone',15)->nullable()->comment('手机号码');
             $table->string('email',32)->unique()->nullable()->comment('邮箱');
+            $table->ipAddress('lastip')->comment('最后登录ip');
             $table->boolean('status')->default(TRUE)->comment('用户状态');
             $table->timestamps();
         });

@@ -15,6 +15,9 @@ class CreateAttrsTable extends Migration
     {
         Schema::create('attrs', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('type_id')->comment('商品分类');
+            $table->string('attr_name')->comemt('属性名称');
+            $table->string('attr_value')->comment('属性名称');
             $table->timestamps();
         });
     }
