@@ -8,4 +8,15 @@ class NumberController extends Controller{
     {
        return view('admin.number.index');
     }
+    public function add()
+    {
+        # code...
+        return view('admin.number.add');
+    }
+     
+    public function doadd(Request $req)
+    {
+        dd($req->all());
+
+    }
 }
