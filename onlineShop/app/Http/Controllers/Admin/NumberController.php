@@ -16,6 +16,11 @@ class NumberController extends Controller{
      
     public function doadd(Request $req)
     {
+        $validatedData = $request->validate([
+            'username' => 'required|unique:posts|max:255',
+            'password' => 'required',
+            'email' => 'required|email',
+        ]);
         dd($req->all());
 
     }
